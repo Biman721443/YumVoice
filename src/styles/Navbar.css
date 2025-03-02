@@ -1,0 +1,202 @@
+/* Default Navbar Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5722;
+    padding: 12px 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-logo a:hover {
+    color: #ffd700;
+  }
+  
+  /* Search Bar */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+  }
+  
+  .navbar-search input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 200px;
+  }
+  
+  .navbar-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 8px;
+    color: #ff5722;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-search button:hover {
+    color: #d84315;
+  }
+  
+  .navbar-mic {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff5722;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-mic:hover {
+    transform: scale(1.1);
+    color: #d84315;
+  }
+  
+  /* Right Section (Cart + User Auth) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-cart {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-cart:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+    }
+  
+    /* Hide logo and auth buttons on small screens */
+    .navbar-logo,
+    .auth-btn {
+      display: none;
+    }
+  
+    /* Display only search bar and cart side by side */
+    .navbar-search {
+      flex-grow: 1;
+      width: auto;
+    }
+  
+    .navbar-right {
+      display: flex;
+      
+    }
+  
+    /* Adjust cart icon size */
+    .navbar-cart {
+      font-size: 1.8rem;
+    }
+  }
+  /* Auth Buttons (Login & Register) */
+.auth-btn {
+    background: white;
+    color: #ff5722;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 2px solid #ff5722;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-btn:hover {
+    background: #ff5722;
+    color: white;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background: #ff5722;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .logout-btn:hover {
+    background: white;
+    color: #ff5722;
+  }
+  
+  /* Responsive: Hide Auth Buttons on Small Screens */
+  @media (max-width: 768px) {
+    .auth-btn {
+      display: none;
+    }
+  }
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .toggle-auth button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  

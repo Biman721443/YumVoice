@@ -1,0 +1,73 @@
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.restaurant-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ff6600;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.restaurant-info {
+  padding: 10px;
+}
+
+.restaurant-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.restaurant-hotel {
+  font-size: 14px;
+  color: #666;
+}
+
+.restaurant-price {
+  font-size: 16px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.restaurant-rating {
+  font-size: 16px;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.add-cart-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #cc5500;
+}

@@ -1,0 +1,92 @@
+/* Main container */
+.restaurant-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Card Styling */
+.restaurant-card {
+  display: grid;
+  grid-template-columns: 120px auto auto; /* Fixed image, flexible text, button */
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.restaurant-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Info Section */
+.restaurant-info {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hotel-name {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.price {
+  color: #28a745;
+}
+
+.rating {
+  color: #f4b400;
+}
+
+/* Order Button */
+.order-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-button:hover {
+  background: #0056b3;
+}
+
+/* No items found text */
+.no-items {
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+  grid-column: span 2;
+}
