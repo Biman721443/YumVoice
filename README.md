@@ -2,7 +2,7 @@
 🍽️ A web app for voice-activated food ordering, built with React and Firebase for a seamless experience.
 
 **🚀 Live Demo**  
-👉 Try it [here]
+👉 Try it [https://yum-voice.vercel.app/]
 
 **📌 Key Features**  
 - ✅ **Voice Search**: Hands-free food item search.  
